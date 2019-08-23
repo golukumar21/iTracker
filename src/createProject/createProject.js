@@ -2,6 +2,18 @@ import React from 'react';
 import './createProject.css';
 
 class createProject extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+        this.createProject = this.createProject.bind(this);
+    }
+    
+    createProject() {
+        debugger;
+    }
+
     render() {
         return (
             <section className="landing_page">
@@ -11,7 +23,7 @@ class createProject extends React.Component {
                         <h3>Create new project</h3>
                         <div className="new_prj">
                             <input placeholder="Enter project name" />
-                            <button>GO</button>
+                            <button onClick={this.createProject}>GO</button>
                         </div>
                     </div>
                     <span>or</span>
