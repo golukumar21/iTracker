@@ -5,7 +5,7 @@ class createProjectDet extends React.Component {
     render() {
         return(
             <div className="create_prjDet">
-                
+                CREATE PROJECT
             </div>
         )
     }
