@@ -1,0 +1,49 @@
+.create_prjDet {
+    padding: 15px;
+}
+
+.prj_det {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create_prjDet h1 {
+    margin: 0;
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 10px;
+}
+
+.prj_det > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 1 0 25%;
+}
+
+.prj_det > div > input {
+    padding: 10px;
+}
+
+.prj_det > div > input[type="date"] {
+    padding: 8px;
+}
+
+.prj_det > div > select {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prj_det > div > label {
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+.prj_desc textarea {
+    min-height: 300px;
+    resize: none;
+}
+
+.create_prjDet button {
+    margin-left: 8px;
+    margin-top: 15px;
+}
