@@ -2,7 +2,7 @@
     padding: 15px;
 }
 
-.prj_det {
+.prj_createDet {
     display: flex;
     flex-wrap: wrap;
 }
@@ -13,27 +13,27 @@
     padding-bottom: 10px;
 }
 
-.prj_det > div {
+.prj_createDet > div {
     display: flex;
     flex-direction: column;
     padding: 10px;
     flex: 1 0 25%;
 }
 
-.prj_det > div > input {
+.prj_createDet > div > input {
     padding: 10px;
 }
 
-.prj_det > div > input[type="date"] {
+.prj_createDet > div > input[type="date"] {
     padding: 8px;
 }
 
-.prj_det > div > select {
+.prj_createDet > div > select {
     padding: 10px;
     cursor: pointer;
 }
 
-.prj_det > div > label {
+.prj_createDet > div > label {
     padding: 10px 0px;
     font-weight: 600;
 }

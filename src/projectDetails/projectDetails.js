@@ -4,8 +4,8 @@ import './projectDetails.css';
 class projectDetails extends React.Component {
     render() {
         return(
-            <div className="prj_det">
-                Project Details
+            <div className="prj_details">
+                <h1>SX Cycling</h1>
             </div>
         )
     }
