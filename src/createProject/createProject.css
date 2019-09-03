@@ -58,7 +58,7 @@
     padding: 8px;
 }
 
-.search_result table tbody tr td:first-child {
+.search_result table tbody tr td:first-child a {
     color: #2873cf;
     cursor: pointer;
     font-weight: 600;

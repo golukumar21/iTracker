@@ -1,7 +1,11 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './createProject.css';
 
+
+const dbUrl = "http://192.168.1.134:4000/prj";
+// const localUrl = "http://localhost:4000/prj";
 class createProject extends React.Component {
     constructor(props) {
         super(props);
@@ -28,7 +32,7 @@ class createProject extends React.Component {
         }
     }
     componentDidMount() {
-        fetch("http://localhost:4000/prj")
+        fetch(dbUrl)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -87,7 +91,9 @@ class createProject extends React.Component {
                                 <tbody>
                                     {items['res'].map(item => ( 
                                         <tr key={item._id}>
-                                            <td id={item._id}>{item.pName}</td>
+                                            <td onClick={this.navigator} id={item._id}>
+                                                <Link to={`project_details/${item._id}`}>{item.pName}</Link>
+                                            </td>
                                             <td>{(new Date(item.pcreateDate).toLocaleDateString())}</td>
                                             <td>{item.pStatus}</td>
                                             <td>{(new Date(item.pETA).toLocaleDateString())}</td>

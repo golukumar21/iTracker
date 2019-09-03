@@ -12,10 +12,10 @@ class App extends React.Component {
     return (
       <Router>
         <Header />
-        <Switch>
+        <Switch location={this.props.location}>
           <Route exact path="/" component={createProject} />
           <Route exact path="/create_project" component={createProjectDet} />
-          <Route exact path="/project_details" component={projectDetails} />
+          <Route exact path="/project_details/:id" component={projectDetails} />
         </Switch>
       </Router>
     )
