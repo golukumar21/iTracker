@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './createProject.css';
 
 
-const dbUrl = "http://192.168.1.134:4000/prj";
-// const localUrl = "http://localhost:4000/prj";
+// const dbUrl = "http://192.168.1.134:4000/prj";
+const localUrl = "http://192.168.1.137:4000/prj";
 class createProject extends React.Component {
     constructor(props) {
         super(props);
@@ -32,7 +32,7 @@ class createProject extends React.Component {
         }
     }
     componentDidMount() {
-        fetch(dbUrl)
+        fetch(localUrl)
             .then(res => res.json())
             .then(
                 (result) => {

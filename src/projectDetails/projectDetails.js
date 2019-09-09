@@ -2,8 +2,8 @@ import React from 'react';
 import './projectDetails.css';
 
 
-const dbUrl = "http://192.168.1.134:4000/prj";
-// const localUrl = "http://localhost:4000/prj";
+// const dbUrl = "http://192.168.1.134:4000/prj";
+const localUrl = "http://192.168.1.137:4000/prj";
 
 class projectDetails extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class projectDetails extends React.Component {
         }
     }
     componentDidMount() {
-        fetch(dbUrl + '/' + this.props.match.params.id)
+        fetch(localUrl + '/' + this.props.match.params.id)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -92,7 +92,6 @@ class projectDetails extends React.Component {
                         <textarea value={`${items['res'].pDesc}`} readOnly="readOnly"></textarea>
                     </div>
                 </div>
-                <button onClick={this.submitDetails}>Submit</button>
             </div>
             )
         }
