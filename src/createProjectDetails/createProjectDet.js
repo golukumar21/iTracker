@@ -1,4 +1,5 @@
 import React from 'react';
+import Loader from 'react-loader-spinner';
 import './createProjectDet.css';
 
 // const dbUrl = "http://192.168.1.134:4000/prj";
@@ -8,7 +9,8 @@ class createProjectDet extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            date: new Date()
+            date: new Date(),
+            redirect: false
         }
         this.submitDetails = this.submitDetails.bind(this);
     }
@@ -47,6 +49,8 @@ class createProjectDet extends React.Component {
                     "pDesc": pDesc
                 }),
             });
+            let path = `/`;
+            this.props.history.push(path);
         };
     }
     render() {

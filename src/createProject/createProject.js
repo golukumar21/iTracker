@@ -1,6 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Loader from 'react-loader-spinner';
 import './createProject.css';
 
 
@@ -55,7 +56,13 @@ class createProject extends React.Component {
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return (
+                <Loader
+                    type="Circles"
+                    color="#2873cf"
+                    className="loader"
+                />
+            );
         } else {
             return (
                 <section className="landing_page">
@@ -89,7 +96,7 @@ class createProject extends React.Component {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {items['res'].map(item => ( 
+                                    {items['res'].map(item => (
                                         <tr key={item._id}>
                                             <td onClick={this.navigator} id={item._id}>
                                                 <Link to={`project_details/${item._id}`}>{item.pName}</Link>

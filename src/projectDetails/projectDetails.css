@@ -60,3 +60,11 @@
     margin-left: 8px;
     margin-top: 15px;
 }
+
+
+.loader {
+  height: 90vh !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
