@@ -2,15 +2,46 @@ header {
     display: flex;
     background-color: #000000;
     justify-content: space-between;
-    padding: 5px 15px;
+}
+
+header .app_name {
+    display: flex;
+}
+
+header .app_name a {
+    text-decoration: none;
 }
 
 header img {
     width: 150px;
 }
 
-header h1 {
+header .app_opt {
+    color: #ffffff;
+}
+
+header .app_opt ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .app_opt ul li {
+    display: inline-flex;
+    margin: 0px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header .app_opt ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .app_name h1 {
     color: #ffffff;
     margin: 0;
-    padding-left: 10px;
+    padding: 10px;
+    font-size: 32px;
 }
