@@ -87,9 +87,7 @@ class projectDetails extends React.Component {
                             <label>Project Status:</label>
                             <select>
                                 <option>Yet to Start</option>
-                                <option>Started</option>
                                 <option>In Progress</option>
-                                <option>On Hold</option>
                                 <option>Completed</option>
                             </select>
                         </div>

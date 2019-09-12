@@ -1,5 +1,4 @@
 import React from 'react';
-import Loader from 'react-loader-spinner';
 import './createProjectDet.css';
 
 // const dbUrl = "http://192.168.1.134:4000/prj";
@@ -94,9 +93,7 @@ class createProjectDet extends React.Component {
                         <label>Project Status:</label>
                         <select id="pStatus">
                             <option>Yet to Start</option>
-                            <option>Started</option>
                             <option>In Progress</option>
-                            <option>On Hold</option>
                             <option>Completed</option>
                         </select>
                     </div>
