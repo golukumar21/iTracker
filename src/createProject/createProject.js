@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Loader from 'react-loader-spinner';
 import './createProject.css';
 
@@ -67,7 +67,7 @@ class createProject extends React.Component {
             return (
                 <section className="landing_page">
                     <div className="main_sec">
-                        <h1>Welcome to iTracker</h1>
+                        {/* <h1>Welcome to iTracker</h1> */}
                         <div className="create_prj">
                             <h3>Create new project</h3>
                             <div className="new_prj">

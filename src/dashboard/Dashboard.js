@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Loader from 'react-loader-spinner';
 // const dbUrl = "http://192.168.1.134:4000/prj";
 const localUrl = "http://192.168.1.137:4000/prj";
@@ -47,9 +48,12 @@ class Dashboard extends React.Component {
         } else {
             return (
                 <div className="dashboard">
-                    <h1>Welcome to iTracker</h1>
+                    {/* <h1>Welcome to iTracker</h1> */}
                     <section className="prj_overview">
                         <div className="cont">
+                            <span className="view_all">
+                                <Link to={`create`}>View All</Link>    
+                            </span>
                             <div className="det total">
                                 <label>Total no. of Projects</label>
                                 <h1>{`${items['res'].total}`}</h1>

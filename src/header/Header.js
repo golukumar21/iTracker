@@ -8,7 +8,7 @@ class Header extends React.Component {
             <div>
                 <header>
                     <div className="app_name">
-                        <Link to="/">
+                        <Link to="/create">
                             <h1>iTracker</h1>
                         </Link>
                         <div className="app_opt">
